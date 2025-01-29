@@ -9,6 +9,7 @@
 
 #include <fstream>
 #include <sstream>
+#include <cassert>
 
 inline constexpr size_t flatIdx(const std::vector< size_t >& shape, const std::vector< size_t >& idx)
 {

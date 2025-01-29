@@ -1,0 +1,3 @@
+/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles/label-reader.dir
+/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles/edit_cache.dir
+/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles/rebuild_cache.dir
