@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MyNeuralNetwork",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network-Debug-c72c9ddfb9ae67830ec6.json",
+					"name" : "neural_network",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_dataset_images::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_dataset_images-Debug-5594ac251877f82d99a1.json",
+					"name" : "read_dataset_images",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_dataset_labels::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_dataset_labels-Debug-de27f7c9a1135f5e72ba.json",
+					"name" : "read_dataset_labels",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug",
+		"source" : "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -117,24 +117,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named label-reader
+# Target rules for targets named read_dataset_images
 
 # Build rule for target.
-label-reader: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 label-reader
-.PHONY : label-reader
+read_dataset_images: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_dataset_images
+.PHONY : read_dataset_images
 
 # fast build rule for target.
-label-reader/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/build
-.PHONY : label-reader/fast
+read_dataset_images/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/build
+.PHONY : read_dataset_images/fast
+
+#=============================================================================
+# Target rules for targets named read_dataset_labels
+
+# Build rule for target.
+read_dataset_labels: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_dataset_labels
+.PHONY : read_dataset_labels
+
+# fast build rule for target.
+read_dataset_labels/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/build
+.PHONY : read_dataset_labels/fast
+
+#=============================================================================
+# Target rules for targets named neural_network
+
+# Build rule for target.
+neural_network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 neural_network
+.PHONY : neural_network
+
+# fast build rule for target.
+neural_network/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/build
+.PHONY : neural_network/fast
+
+src/neural_network.o: src/neural_network.cpp.o
+.PHONY : src/neural_network.o
+
+# target to build an object file
+src/neural_network.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/src/neural_network.cpp.o
+.PHONY : src/neural_network.cpp.o
+
+src/neural_network.i: src/neural_network.cpp.i
+.PHONY : src/neural_network.i
+
+# target to preprocess a source file
+src/neural_network.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/src/neural_network.cpp.i
+.PHONY : src/neural_network.cpp.i
+
+src/neural_network.s: src/neural_network.cpp.s
+.PHONY : src/neural_network.s
+
+# target to generate assembly for a file
+src/neural_network.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/src/neural_network.cpp.s
+.PHONY : src/neural_network.cpp.s
+
+src/read_dataset_images.o: src/read_dataset_images.cpp.o
+.PHONY : src/read_dataset_images.o
+
+# target to build an object file
+src/read_dataset_images.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/src/read_dataset_images.cpp.o
+.PHONY : src/read_dataset_images.cpp.o
+
+src/read_dataset_images.i: src/read_dataset_images.cpp.i
+.PHONY : src/read_dataset_images.i
+
+# target to preprocess a source file
+src/read_dataset_images.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/src/read_dataset_images.cpp.i
+.PHONY : src/read_dataset_images.cpp.i
+
+src/read_dataset_images.s: src/read_dataset_images.cpp.s
+.PHONY : src/read_dataset_images.s
+
+# target to generate assembly for a file
+src/read_dataset_images.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/src/read_dataset_images.cpp.s
+.PHONY : src/read_dataset_images.cpp.s
 
 src/read_dataset_labels.o: src/read_dataset_labels.cpp.o
 .PHONY : src/read_dataset_labels.o
 
 # target to build an object file
 src/read_dataset_labels.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/src/read_dataset_labels.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/src/read_dataset_labels.cpp.o
 .PHONY : src/read_dataset_labels.cpp.o
 
 src/read_dataset_labels.i: src/read_dataset_labels.cpp.i
@@ -142,7 +216,7 @@ src/read_dataset_labels.i: src/read_dataset_labels.cpp.i
 
 # target to preprocess a source file
 src/read_dataset_labels.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/src/read_dataset_labels.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/src/read_dataset_labels.cpp.i
 .PHONY : src/read_dataset_labels.cpp.i
 
 src/read_dataset_labels.s: src/read_dataset_labels.cpp.s
@@ -150,32 +224,8 @@ src/read_dataset_labels.s: src/read_dataset_labels.cpp.s
 
 # target to generate assembly for a file
 src/read_dataset_labels.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/src/read_dataset_labels.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/src/read_dataset_labels.cpp.s
 .PHONY : src/read_dataset_labels.cpp.s
-
-text-file/read_labels.o: text-file/read_labels.cpp.o
-.PHONY : text-file/read_labels.o
-
-# target to build an object file
-text-file/read_labels.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/text-file/read_labels.cpp.o
-.PHONY : text-file/read_labels.cpp.o
-
-text-file/read_labels.i: text-file/read_labels.cpp.i
-.PHONY : text-file/read_labels.i
-
-# target to preprocess a source file
-text-file/read_labels.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/text-file/read_labels.cpp.i
-.PHONY : text-file/read_labels.cpp.i
-
-text-file/read_labels.s: text-file/read_labels.cpp.s
-.PHONY : text-file/read_labels.s
-
-# target to generate assembly for a file
-text-file/read_labels.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/text-file/read_labels.cpp.s
-.PHONY : text-file/read_labels.cpp.s
 
 # Help Target
 help:
@@ -185,13 +235,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... label-reader"
+	@echo "... neural_network"
+	@echo "... read_dataset_images"
+	@echo "... read_dataset_labels"
+	@echo "... src/neural_network.o"
+	@echo "... src/neural_network.i"
+	@echo "... src/neural_network.s"
+	@echo "... src/read_dataset_images.o"
+	@echo "... src/read_dataset_images.i"
+	@echo "... src/read_dataset_images.s"
 	@echo "... src/read_dataset_labels.o"
 	@echo "... src/read_dataset_labels.i"
 	@echo "... src/read_dataset_labels.s"
-	@echo "... text-file/read_labels.o"
-	@echo "... text-file/read_labels.i"
-	@echo "... text-file/read_labels.s"
 .PHONY : help
 
 

@@ -116,6 +116,9 @@ public:
     ComponentType&
     operator()(const std::vector< size_t >& idx);
 
+    std::vector<ComponentType>& data() { return data_; }
+    const std::vector<ComponentType>& data() const { return data_; }
+
 private:
 
     std::vector< size_t > shape_;

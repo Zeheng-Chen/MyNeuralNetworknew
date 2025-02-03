@@ -44,5 +44,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/label-reader.dir/DependInfo.cmake"
+  "CMakeFiles/read_dataset_images.dir/DependInfo.cmake"
+  "CMakeFiles/read_dataset_labels.dir/DependInfo.cmake"
+  "CMakeFiles/neural_network.dir/DependInfo.cmake"
   )

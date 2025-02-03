@@ -41,3 +41,25 @@ void DatasetImageReader::pretty_print(const Tensor<float>& tensor, const std::st
         }
     }
 }
+
+int main(int argc, char* argv[]) {
+    if (argc < 3) {
+        std::cerr << "Usage: " << argv[0] << " <image_file> <output_file>\n";
+        return 1;
+    }
+
+    std::string image_file = argv[1];
+    std::string output_file = argv[2];
+
+    try {
+        DatasetImageReader reader(image_file);
+        Tensor<float> image = reader.read_image();
+        reader.pretty_print(image, output_file);
+        std::cout << "Image successfully processed and saved to " << output_file << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return 1;
+    }
+
+    return 0;
+}

@@ -1,1 +1,0 @@
-/usr/bin/c++ "CMakeFiles/label-reader.dir/text-file/read_labels.cpp.o" "CMakeFiles/label-reader.dir/src/read_dataset_labels.cpp.o" -o label-reader 

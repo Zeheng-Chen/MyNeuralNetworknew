@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=LabelReaderProject
+CMAKE_PROJECT_NAME:STATIC=MyNeuralNetwork
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -216,13 +216,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-LabelReaderProject_BINARY_DIR:STATIC=/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build
+MyNeuralNetwork_BINARY_DIR:STATIC=/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build
 
 //Value Computed by CMake
-LabelReaderProject_IS_TOP_LEVEL:STATIC=ON
+MyNeuralNetwork_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-LabelReaderProject_SOURCE_DIR:STATIC=/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile
+MyNeuralNetwork_SOURCE_DIR:STATIC=/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile
 
 
 ########################

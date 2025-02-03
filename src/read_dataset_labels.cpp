@@ -4,6 +4,8 @@
 
 // read_dataset_labels.cpp
 
+
+#include <iostream>
 #include "read_dataset_labels.hpp"
 #include <fstream>
 #include <sstream>
@@ -49,3 +51,34 @@ Tensor<int> DatasetLabelReader::readLabels() const {
 }
 
 
+int main(int argc, char* argv[]) {
+    if (argc < 3) {
+        std::cerr << "Usage: " << argv[0] << " <label_file> <output_file>\n";
+        return 1;
+    }
+
+    std::string label_file = argv[1];
+    std::string output_file = argv[2];
+
+    try {
+        DatasetLabelReader reader(label_file);
+        Tensor<int> labels = reader.readLabels();
+
+        // 将标签写入输出文件
+        std::ofstream out(output_file);
+        if (!out) {
+            throw std::runtime_error("Failed to open output file: " + output_file);
+        }
+
+        for (const auto& value : labels.data()) {
+            out << value << "\n";
+        }
+
+        std::cout << "Labels successfully processed and saved to " << output_file << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return 1;
+    }
+
+    return 0;
+}

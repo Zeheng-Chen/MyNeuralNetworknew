@@ -63,7 +63,9 @@ CMAKE_BINARY_DIR = "/mnt/d/studieren/advanced Programming Techniques/ws2024-grou
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/label-reader.dir/all
+all: CMakeFiles/read_dataset_images.dir/all
+all: CMakeFiles/read_dataset_labels.dir/all
+all: CMakeFiles/neural_network.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +73,88 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/label-reader.dir/clean
+clean: CMakeFiles/read_dataset_images.dir/clean
+clean: CMakeFiles/read_dataset_labels.dir/clean
+clean: CMakeFiles/neural_network.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/label-reader.dir
+# Target rules for target CMakeFiles/read_dataset_images.dir
 
 # All Build rule for target.
-CMakeFiles/label-reader.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" --progress-num=1,2,3 "Built target label-reader"
-.PHONY : CMakeFiles/label-reader.dir/all
+CMakeFiles/read_dataset_images.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" --progress-num=3,4 "Built target read_dataset_images"
+.PHONY : CMakeFiles/read_dataset_images.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/label-reader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/label-reader.dir/all
+CMakeFiles/read_dataset_images.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/read_dataset_images.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 0
-.PHONY : CMakeFiles/label-reader.dir/rule
+.PHONY : CMakeFiles/read_dataset_images.dir/rule
 
 # Convenience name for target.
-label-reader: CMakeFiles/label-reader.dir/rule
-.PHONY : label-reader
+read_dataset_images: CMakeFiles/read_dataset_images.dir/rule
+.PHONY : read_dataset_images
 
 # clean rule for target.
-CMakeFiles/label-reader.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/label-reader.dir/build.make CMakeFiles/label-reader.dir/clean
-.PHONY : CMakeFiles/label-reader.dir/clean
+CMakeFiles/read_dataset_images.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_images.dir/build.make CMakeFiles/read_dataset_images.dir/clean
+.PHONY : CMakeFiles/read_dataset_images.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/read_dataset_labels.dir
+
+# All Build rule for target.
+CMakeFiles/read_dataset_labels.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" --progress-num=5,6 "Built target read_dataset_labels"
+.PHONY : CMakeFiles/read_dataset_labels.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/read_dataset_labels.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/read_dataset_labels.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 0
+.PHONY : CMakeFiles/read_dataset_labels.dir/rule
+
+# Convenience name for target.
+read_dataset_labels: CMakeFiles/read_dataset_labels.dir/rule
+.PHONY : read_dataset_labels
+
+# clean rule for target.
+CMakeFiles/read_dataset_labels.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_dataset_labels.dir/build.make CMakeFiles/read_dataset_labels.dir/clean
+.PHONY : CMakeFiles/read_dataset_labels.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/neural_network.dir
+
+# All Build rule for target.
+CMakeFiles/neural_network.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" --progress-num=1,2 "Built target neural_network"
+.PHONY : CMakeFiles/neural_network.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/neural_network.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/neural_network.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/build/CMakeFiles" 0
+.PHONY : CMakeFiles/neural_network.dir/rule
+
+# Convenience name for target.
+neural_network: CMakeFiles/neural_network.dir/rule
+.PHONY : neural_network
+
+# clean rule for target.
+CMakeFiles/neural_network.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural_network.dir/build.make CMakeFiles/neural_network.dir/clean
+.PHONY : CMakeFiles/neural_network.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,3 +1,5 @@
-/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug/CMakeFiles/label-reader.dir
+/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug/CMakeFiles/read_dataset_images.dir
+/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug/CMakeFiles/read_dataset_labels.dir
+/mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug/CMakeFiles/neural_network.dir
 /mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug/CMakeFiles/edit_cache.dir
 /mnt/d/studieren/advanced Programming Techniques/ws2024-group-20-gile/cmake-build-debug/CMakeFiles/rebuild_cache.dir
